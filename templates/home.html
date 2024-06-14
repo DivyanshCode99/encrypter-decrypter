@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Encrypter Decrypter{% endblock %}
+
+{% block custom_css %}
+<link rel="stylesheet"
+      href='{{ url_for("static",filename="CSS/home_style.css")}}'>
+{% endblock %}
+
+{% block content %}
+<center id ="heading">
+<h1 align="center">Encrypter  Decrypter</h1>
+</center>
+<br>
+<div class="navbar-nav buttons">
+    <a class="nav-item nav-link btn btn-default" id="text_encrypter" href="/text_encrypter">Text Encrypter</a>
+    <a class="nav-item nav-link btn btn-default" id="text_decrypter" href="/text_decrypter">Text Decrypter</a>
+</div>
+<br>
+<div class="navbar-nav buttons">
+    <a class="nav-item nav-link btn btn-default" id="file_encrypter" href="/file_encrypter">File Encrypter</a>
+    <a class="nav-item nav-link btn btn-default" id="file_decrypter" href="/file_decrypter">File Decrypter</a>
+</div>
+<br>
+<br>
+<div class="navbar-nav buttons">
+    <a class="nav-item nav-link btn btn-default" id="download" href="/download/OFFLINEVERSION/...">Download The Offline Version</a>
+    
+</div>
+
+{% endblock %}

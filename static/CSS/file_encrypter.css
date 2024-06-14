@@ -1,0 +1,110 @@
+.buttons{
+    border: 5px 5px 5px darkblue;
+    background-color: #313376;
+}
+.buttons a{
+    font-size: x-large;
+    text-shadow: #1b1d5c;
+    color: white;
+}
+.buttons a:hover{
+    font-size: xx-large;
+    color: darkblue;
+    
+    box-shadow: white;
+    background: lightblue;
+}
+h1{
+    color: white;
+    letter-spacing: 0.15em;
+}
+h2{
+    color: white;
+    letter-spacing: 0.15em;
+}
+
+
+
+textarea, .pwd ,.file_button {
+    width: 90%;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #218838;
+}
+
+
+.file_button{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color:lightblue;
+}
+
+.file-upload-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.file-upload-wrapper {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    border: 4px dashed #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.file-upload-wrapper:hover {
+    border-color: #007bff;
+}
+
+.file-input {
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.file-label {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#aaa;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.file-input:focus + .file-label,
+.file-input:active + .file-label {
+    border-color: #007bff;
+}
+
+.file-input:valid + .file-label {
+    color: #333;
+}
+
+

@@ -1,0 +1,20 @@
+.buttons{
+    border: 5px 5px 5px darkblue;
+    background-color: #313376;
+}
+.buttons a{
+    font-size: x-large;
+    text-shadow: #1b1d5c;
+    color: white;
+}
+.buttons a:hover{
+    font-size: xx-large;
+    color: darkblue;
+    
+    box-shadow: white;
+    background: lightblue;
+}
+h1{
+    color: white;
+    letter-spacing: 0.15em;
+}

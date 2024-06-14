@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}File Decrypter{% endblock %}
+
+{% block custom_css %}
+<link rel="stylesheet" href='{{ url_for("static",filename="CSS/file_decrypter.css")}}'>
+{% endblock %}
+
+{% block content %}
+<center id="heading">
+      <h1 align="center">Encrypter Decrypter</h1>
+      <h2 align="center">File Decrypter</h2>
+      <br>
+      <form enctype="multipart/form-data" action="/decrypt_file" method="POST" id="uploadForm">
+        <div class="form-group">
+                <center>
+                    <div class="file-upload-wrapper">
+                        <input type="file" id="file" name="file_to_decrypt" class="file-input" accept=".enc"  required >
+                        <label for="file" class="file-label">
+                            <span id="file-label-text">Browse File</span>
+                        </label>
+                    </div>
+                </center>
+                <input class="pwd" type="password" name="password" id="password" value="{{ pwd }}" placeholder="Enter password..." required>
+                <center>
+                    <button type="submit" class="decrypt_button" id="submit_b">Decrypt</button>
+                </center>
+        </div>
+    </form>
+</center>
+
+<script type="text/javascript" src="{{ url_for('static',filename='JS/file_decrypter.js') }}"></script>
+
+{% endblock %}

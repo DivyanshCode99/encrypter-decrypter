@@ -1,0 +1,28 @@
+/* CSS for styling*/
+
+body{
+    background-image: url("/static/Images/background.jpg") !important;
+    background-repeat:repeat-y;
+    background-size: cover;
+    background-position-x: left;
+}
+.copy_right_footer{
+    position: fixed;
+    color: white;
+    bottom: 0px;
+    line-height: 3;
+    width: 100%;
+    text-align: center;
+    background-color: #3a4454;
+}
+.container #heading{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color:#191b4d;
+}
+
+.info{
+    width: 50%;
+    height: 400px;
+}
+

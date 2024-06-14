@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Text Encrypter{% endblock %}
+
+{% block custom_css %}
+<link rel="stylesheet" href='{{ url_for("static",filename="CSS/text_encrypter.css")}}'>
+{% endblock %}
+
+{% block content %}
+<center id="heading">
+      <h1 align="center">Encrypter Decrypter</h1>
+      <h2 align="center">Text Encrypter</h2>
+      <br>
+      <form action="/text_encrypter" method="POST">
+            <div class="form-group">
+                <textarea name="text" id="inputText" placeholder="Enter text to encrypt..." required>{{ text_to_encrypt }}</textarea>
+                <input type="password" name="password" id="password" value="{{ pwd }}" placeholder="Enter password..." required>
+                <textarea id="outputText" placeholder="Encrypted text will appear here..." readonly>{{ encrypted_text }}</textarea>
+                <center>
+                    <button type="submit" class="encrypt_button">Encrypt</button>
+                </center>
+            </div>
+        </form>
+</center>
+
+
+{% endblock %}
